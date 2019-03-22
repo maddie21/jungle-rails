@@ -22,6 +22,17 @@ main section.categories-show {
 
       .sold-out {
         // TODO: Maddie add styles for the sold out badge here
+        background-color: rgb(213, 145, 145);
+        margin-right: 155px;
+        margin-top: -15px;
+        margin-left: -15px;
+        border-bottom-right-radius: 10px;
+        text-align: center;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        color: #EEE;
+        
+        
       }
 
       header img {
