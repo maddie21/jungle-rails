@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    </head>
+    <body>
+    <section class="orders-show">
+
+        <header class="page-header">
+            <h1>Hello you.</h1>
+            <h4>Thank you for your order!. Your Order ID is #<%= @order.id %></h4>
+            <p>Order email: <%= @order.email %></p>
+        </header>
+    
+        <div class="line-items">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Item Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% @order.line_items.each do |line_item| %>
+                    <tr>
+                        <td>
+                            <h3><%= line_item.product.name %></h3>
+                        </td>
+                        <td><%= humanized_money_with_symbol line_item.item_price %></td>
+                        <td><%= line_item.quantity %></td>
+                        <td><%= humanized_money_with_symbol line_item.total_price %></td>
+                        </tr>
+                <% end %>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"><%= @order.line_items.size %></th>
+                    <th scope="col"><%= humanized_money_with_symbol @order.total_cents/100.0 %></th>
+                </tr>
+                </thead>
+            </table>
+            <p>Thank you, </p>
+            <p>The Jungle Store</p>
+        </div>
+    
+    </section>
+    </body>
+</html>

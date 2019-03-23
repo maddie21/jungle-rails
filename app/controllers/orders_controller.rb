@@ -53,6 +53,8 @@ class OrdersController < ApplicationController
       )
     end
     order.save!
+    # Call the OrderMailer and pass in the Order details
+    OrderMailer.order_confirmation(order).deliver_now
     order
   end
 

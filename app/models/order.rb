@@ -7,4 +7,8 @@ class Order < ActiveRecord::Base
 
   validates :stripe_charge_id, presence: true
 
+  def get_order_id
+    id.to_s
+  end
+
 end

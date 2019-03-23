@@ -1,0 +1,16 @@
+Order #<%= @order.id %></h1>
+Order email: <%= @order.email %>
+=================================
+Thank you for your order!
+=================================
+<% @order.line_items.each do |line_item| %>
+----------------------------
+    <%= line_item.product.name %> (<%= humanized_money_with_symbol line_item.item_price %>) * <%= line_item.quantity %> = <%= humanized_money_with_symbol line_item.total_price %>
+----------------------------
+<% end %>
+=================================
+Total Items: <%= @order.line_items.size %>
+Order Total: <%= humanized_money_with_symbol @order.total_cents/100.0 %>
+
+Thank you, 
+The Jungle Store
