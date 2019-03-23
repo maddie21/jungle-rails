@@ -2,10 +2,35 @@
 
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
+    <p>Order email: <%= @order.email %></p>
   </header>
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+  </div>
+
+  <div class="line-items">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Item Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render @order.line_items %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"><%= @order.line_items.size %></th>
+          <th scope="col"><%= humanized_money_with_symbol @order.total_cents/100.0 %></th>
+        </tr>
+      </thead>
+    </table>
   </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
