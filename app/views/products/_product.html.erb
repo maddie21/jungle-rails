@@ -9,6 +9,9 @@
       <%= image_tag product.image.thumb, alt: product.name %>
       <h4><%= product.name %></h4>
     <% end %>
+    <% if product.reviews.size != 0 %>
+      <p>Average Rating: <%= product.average_rating %></p>
+    <% end %>
   </header>
   <p class="description">
     <%= product.description %>
