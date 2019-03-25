@@ -21,8 +21,38 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
+### Final Product 
+
+!["Screenshot of "]()
+!["Screenshot of "]()
+!["Screenshot of "]()
+!["Screenshot of "]()
+!["Screenshot of "]()
+!["Screenshot of "]()
+
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+* bcrypt (~> 3.1.7)
+* bootstrap-sass (~> 3.3.6)
+* byebug
+* carrierwave
+* dotenv-rails
+* faker
+* font-awesome-rails
+* jbuilder (~> 2.0)
+* jquery-rails
+* money-rails
+* newrelic_rpm
 * PostgreSQL 9.x
-* Stripe
+* puma
+* quiet_assets
+* rails (= 4.2.6)
+* rails_12factor
+* rmagick
+* sass-rails (~> 5.0)
+* sdoc (~> 0.4.0)
+* spring
+* stripe
+* turbolinks
+* uglifier (>= 1.3.0)
+* web-console (~> 2.0)
