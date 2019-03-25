@@ -23,12 +23,13 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ### Final Product 
 
-!["Screenshot of "]()
-!["Screenshot of "]()
-!["Screenshot of "]()
-!["Screenshot of "]()
-!["Screenshot of "]()
-!["Screenshot of "]()
+!["Screenshot of Poducts Page"](https://github.com/maddie21/jungle-rails/blob/master/docs/ProductsPage.png?raw=true)
+!["Screenshot of Categories Page "](https://github.com/maddie21/jungle-rails/blob/master/docs/Categories.png?raw=true)
+!["Screenshot of Ratings and Comments Page"](https://github.com/maddie21/jungle-rails/blob/master/docs/Rating&Comments.png?raw=true)
+!["Screenshot of Order Confirmation Page "](https://github.com/maddie21/jungle-rails/blob/master/docs/OrderConfirmation.png?raw=true)
+!["Screenshot of Average Rating Page"](https://github.com/maddie21/jungle-rails/blob/master/docs/AverageRating.png?raw=true)
+!["Screenshot of Login Page"](https://github.com/maddie21/jungle-rails/blob/master/docs/LoginPage.png?raw=true)
+!["Screenshot when there are no ratings or reviews"](https://github.com/maddie21/jungle-rails/blob/master/docs/NoReviews.png?raw=true)
 
 ## Dependencies
 
