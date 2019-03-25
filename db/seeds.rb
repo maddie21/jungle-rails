@@ -124,7 +124,10 @@ cat3.products.create!({
   price: 987.65
 })
 
-cat3.products.create!({
+first_user = User.new(email: 'madhuri.cs21@gmail.com', password: 'jungle')
+first_user.save!
+
+red_bookshelf = cat3.products.create!({
   name:  'Red Bookshelf',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('furniture3.jpg'),
@@ -132,5 +135,7 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+r = Review.new(product_id: red_bookshelf.id, user_id: first_user.id, rating: 5, comment: "This is the best bookshelf, said no one ever")
+r.save!
 
 puts "DONE!"
