@@ -2,6 +2,15 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Function Requirements 
+
+There are multiple high-level goals to this project:
+
+* Become familiar with Ruby and the Rails framework
+* Learn how to navigate an existing code-base
+* Use existing code style and approach to       implement new features in unfamiliar territory
+* Apply previous learning tactics to research and become familiar with a new paradigm, language and framework
+* A simulation of the real world where feature and bug-fix requests are listed instead of step-by-step instructions on how to implement a solution
 
 ## Setup
 
@@ -30,6 +39,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 !["Screenshot of Average Rating Page"](https://github.com/maddie21/jungle-rails/blob/master/docs/AverageRating.png?raw=true)
 !["Screenshot of Login Page"](https://github.com/maddie21/jungle-rails/blob/master/docs/LoginPage.png?raw=true)
 !["Screenshot when there are no ratings or reviews"](https://github.com/maddie21/jungle-rails/blob/master/docs/NoReviews.png?raw=true)
+!["Screenshot of Payment details page"](https://github.com/maddie21/jungle-rails/blob/master/docs/Payment.png?raw=true)
+
 
 ## Dependencies
 
